@@ -1,18 +1,21 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Other/File.java to edit this template
- */
+import java.util.Scanner;
 
-/**
- *
- * @author Vo Van Thanh Dat
- */
-public class newJavaFile1 {
+public class Bai2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        // TODO code application logic here
+        System.out.print("Nhập a: ");
+        int a = sc.nextInt();
+        System.out.print("Nhập b: ");
+        int b = sc.nextInt();
+        System.out.print("Nhập c: ");
+        int c = sc.nextInt();
+
+        int min = a;
+        if (b < min) min = b;
+        if (c < min) min = c;
+
+        System.out.println("Số nhỏ nhất là: " + min);
+        sc.close();
     }
 }
